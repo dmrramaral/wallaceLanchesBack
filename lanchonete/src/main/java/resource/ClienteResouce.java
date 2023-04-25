@@ -18,7 +18,7 @@ import entity.Cliente;
 import repository.ClienteRepository;
 
 @RestController
-@RequestMapping("api/cliente")
+@RequestMapping(value = "/cliente")
 public class ClienteResouce {
 	@Autowired
 	private ClienteRepository clienteRepository;

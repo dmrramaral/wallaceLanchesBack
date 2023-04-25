@@ -16,23 +16,23 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "CLIENTE")
+@Table(name = "tb_cliente")
 public class Cliente {
-	
-	 	@Id
-	    @GeneratedValue(strategy=GenerationType.IDENTITY)
-	    private Long id;
-	    
-	    @Column(nullable = false)
-	    private String nome;
-	    
-	    @Column(nullable = false, unique = true)
-	    private String email;
-	    
-	    @Column(nullable = false)
-	    private String telefone;
-	    
-	    @Column(nullable = false, unique = true)
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+	@Column(name = "nome")
+	private String nome;
+
+	@Column(name = "email")
+	private String email;
+
+	@Column(name = "telefone")
+	private String telefone;
+
+	@Column(name = "cpf")
 	    private String cpf;
 
 }
