@@ -28,8 +28,11 @@ public class Cliente {
     @Column(name = "nome_cliente")
     private String nome;
 
-    @Column(name = "cpf_cliente")
+    @Column(name = "telefone_cliente")
     private String telefone;
+
+    @Column(name = "cpf_cliente")
+    private String cpf;
 
     @Column(name = "email_cliente")
     private String email;
