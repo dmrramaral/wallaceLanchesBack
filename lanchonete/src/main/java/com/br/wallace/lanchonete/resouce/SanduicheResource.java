@@ -11,7 +11,7 @@ import com.br.wallace.lanchonete.entity.Sanduiche;
 import com.br.wallace.lanchonete.repository.SanduicheRepository;
 
 @RestController
-@RequestMapping("/sanduiche")
+@RequestMapping("api/sanduiche")
 public class SanduicheResource {
 
     @Autowired
