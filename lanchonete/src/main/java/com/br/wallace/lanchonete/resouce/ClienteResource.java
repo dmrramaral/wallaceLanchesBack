@@ -19,7 +19,7 @@ import com.br.wallace.lanchonete.entity.Cliente;
 import com.br.wallace.lanchonete.repository.ClienteRepository;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("api/cliente")
 public class ClienteResource {
 
     @Autowired
