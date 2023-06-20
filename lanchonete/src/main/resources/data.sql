@@ -28,34 +28,34 @@ INSERT INTO INGREDIENTES (ID, TIPO_INGREDIENTE_ID, NOME_INGREDIENTE) VALUES (12,
 INSERT INTO INGREDIENTES (ID, TIPO_INGREDIENTE_ID, NOME_INGREDIENTE) VALUES (13, 4, 'Pão de Hamburguer');
 
 -- Inserção dos sanduíches
-INSERT INTO tb_sanduiche (id, nome_sanduiche, valor_sanduiche) VALUES (1, 'X-Tudo', 20.00);
-INSERT INTO tb_sanduiche (id, nome_sanduiche, valor_sanduiche) VALUES (2, 'X-Burguer', 10.00);
-INSERT INTO tb_sanduiche (id, nome_sanduiche, valor_sanduiche) VALUES (3, 'X-Salada', 15.00);
-INSERT INTO tb_sanduiche (id, nome_sanduiche, valor_sanduiche) VALUES (4, 'X-Bacon', 0.00);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (1,' Sanduiche gostos', 'X-Tudo', 20.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (2,' Sanduiche gostos', 'X-Burguer', 10.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (3,' Sanduiche gostos', 'X-Salada', 15.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (4,' Sanduiche gostos', 'X-Bacon', 0.00, 1);
 
 -- Inserção dos ingredientes dos sanduíches
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 1);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 3);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 4);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 11);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 6);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 7);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 8);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (1, 13);
+/* INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 1);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 3);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 4);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 11);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 6);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 7);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 8);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 13);
 
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (2, 1);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (2, 11);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (2, 13);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (2, 1);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (2, 11);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (2, 13);
 
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (3, 1);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (3, 11);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (3, 6);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (3, 7);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (3, 8);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (3, 13);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 1);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 11);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 6);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 7);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 8);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 13);
 
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (4, 1);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (4, 2);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (4, 4);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (4, 11);
-INSERT INTO sanduiche_ingredientes (sanduiche_id, ingredientes_id) VALUES (4, 13);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 1);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 2);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 4);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 11);
+INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 13); */
