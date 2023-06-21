@@ -28,34 +28,45 @@ INSERT INTO INGREDIENTES (ID, TIPO_INGREDIENTE_ID, NOME_INGREDIENTE) VALUES (12,
 INSERT INTO INGREDIENTES (ID, TIPO_INGREDIENTE_ID, NOME_INGREDIENTE) VALUES (13, 4, 'Pão de Hamburguer');
 
 -- Inserção dos sanduíches
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (1,' Sanduiche gostos', 'X-Tudo', 20.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (2,' Sanduiche gostos', 'X-Burguer', 10.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (3,' Sanduiche gostos', 'X-Salada', 15.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (4,' Sanduiche gostos', 'X-Bacon', 0.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (1,' Sanduiche gostos', 'X-Tudo', 20.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (2,' Sanduiche gostos', 'X-Burguer', 10.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (3,' Sanduiche gostos', 'X-Salada', 15.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (4,' Sanduiche gostos', 'X-Bacon', 0.00, 0);
 
 -- Inserção dos ingredientes dos sanduíches
-/* INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 1);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 3);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 4);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 11);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 6);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 7);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 8);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (1, 13);
+ /*  id;
+    name = "produto_id"
+    name = "ingrediente_id" */
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (1, 1, 13);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (2, 1, 1);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (3, 1, 2);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (4, 1, 3);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (5, 1, 4);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (6, 1, 5);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (7, 1, 6);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (8, 1, 7);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (9, 1, 9);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (10, 1, 10);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (11, 1, 11);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (12, 1, 12);
+ 
+-- X Burguer 
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (13, 2, 13);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (14, 2, 1);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (15, 2, 11);
 
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (2, 1);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (2, 11);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (2, 13);
+-- X Salada
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (16, 3, 13);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (17, 3, 1);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (18, 3, 6);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (19, 3, 7);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (20, 3, 11);
 
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 1);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 11);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 6);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 7);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 8);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (3, 13);
-
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 1);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 2);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 4);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 11);
-INSERT INTO produto_ingredientes (produto_id, ingredientes_id) VALUES (4, 13); */
+-- X Bacon
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (21, 4, 13);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (22, 4, 1);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (23, 4, 6);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (24, 4, 7);
+INSERT INTO produto_ingrediente ( id, produto_id, ingrediente_id) VALUES (25, 4, 4);
+  
+   

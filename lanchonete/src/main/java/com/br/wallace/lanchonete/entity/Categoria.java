@@ -8,7 +8,6 @@ public enum Categoria {
     ACOMPANHAMENTO("Acompanhamento"),
     PROMOCAO("Promoção"),
     COMBO("Combo");
-    
 
     private String descricao;
 
