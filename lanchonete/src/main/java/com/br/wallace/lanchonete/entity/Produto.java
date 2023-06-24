@@ -8,16 +8,26 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
+/**
+ * Sanduiche
+ */
 @Data
 @Entity
-@Table(name = "tipo_ingrediente")
-public class TipoIngrediente {
+
+@Table(name = "tb_produto")
+public class Produto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "nome_tipo_ingrediente")
-    private String nomeTipoIngrediente;
+    @Column
+    private String nome;
+    @Column
+    private String descricao;
+    @Column
+    private Double valor;
+    @Column
+    private Categoria categoria;
 
 }
