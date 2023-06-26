@@ -29,15 +29,22 @@ INSERT INTO INGREDIENTES (ID, TIPO_INGREDIENTE_ID, NOME_INGREDIENTE) VALUES (13,
 
 -- Inserção dos sanduíches
 
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (1,' Sanduiche gostos', 'X-Tudo', 22.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (2,' Sanduiche gostos', 'X-Burguer', 13.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (3,' Sanduiche gostos', 'X-Salada Simples', 15.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (4,' Sanduiche gostos', 'X-Salada Especial', 15.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (1,' Sanduiche gostos', 'X-Tudo', 22.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (2,' Sanduiche gostos', 'X-Burguer', 13.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (3,' Sanduiche gostos', 'X-Salada Simples', 15.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (4,' Sanduiche gostos', 'X-Salada Especial', 15.00, 0);
 INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (5,' Sanduiche gostos', 'X-Bacon', 0.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (6,' Sanduiche gostos', 'X-Bacon Salada', 0.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (6,' Sanduiche gostos', 'X-Bacon Salada', 0.00, 0);
 INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (7,' Sanduiche gostos', 'Gostosão', 20.00, 1);
 INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (8,' Sanduiche gostos', 'X-Man', 10.00, 1);
-INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (9,' Sanduiche gostos', 'Gordinho Turbinado', 10.00, 1);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (9,' Sanduiche gostos', 'Gordinho Turbinado', 10.00, 0);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (10,'X-Tudo + Coca Mini + Batata C', 'Combo 3', 30.00, 5);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (11,'X-Salada Especial + Coca Mini + Batata C', 'Combo 1', 25.00, 5);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (12,'X-Bacon Salada + Coca Mini + Batata C', 'Combo 2', 28.00, 5);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (13,'X-Tudo + Mini Coca', 'X-Tudo', 24.00, 4);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (14,'X-Salada Simples + Mini Coca', 'X-Salada Simples', 24.00, 4);
+INSERT INTO tb_produto (id, descricao, nome, valor, categoria) VALUES (15,'X-Bacon Salada + Mini Coca', 'X-Bacon Salada', 24.00, 4);
+
 
 
 -- X-Burguer
