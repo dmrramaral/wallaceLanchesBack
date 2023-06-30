@@ -31,7 +31,8 @@ public class ClienteResource {
     @Autowired
     private ClienteRepository clienteRepository;
 
-    PasswordEncoder passwordEncoder;
+    @Autowired
+    PasswordEncoder encoder;
 
     @GetMapping
     public List<Cliente> findAll() {
@@ -45,7 +46,7 @@ public class ClienteResource {
 
     @PostMapping
     public Cliente save(@RequestBody @Valid Cliente cliente) {
-        cliente.setPassword(passwordEncoder.encode(cliente.getPassword()));
+        cliente.setPassword(encoder.encode(cliente.getPassword()));
         return clienteRepository.save(cliente);
     }
 
@@ -64,9 +65,9 @@ public class ClienteResource {
     }
 
     @GetMapping("/validarSenha")
-    public ResponseEntity<Boolean> validarSenha(@RequestBody String login, @RequestParam String password) {
+    public ResponseEntity<Boolean> validarSenha(@RequestBody String cpf, @RequestParam String password) {
 
-        Optional<Cliente> clienteAtualizado = clienteRepository.findByLogin(login);
+        Optional<Cliente> clienteAtualizado = clienteRepository.findByCpf(cpf);
         if (clienteAtualizado.isEmpty()) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(false);
         }

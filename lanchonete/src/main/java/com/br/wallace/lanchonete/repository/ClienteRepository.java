@@ -8,6 +8,6 @@ import com.br.wallace.lanchonete.entity.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
-    Optional<Cliente> findByLogin(String idLogin);
+    public Optional<Cliente> findByCpf(String cpf);
 
 }
